@@ -15,7 +15,7 @@ composer-cli () {
 
 # Start the container.
 echo "🚀 Launching the container"
-sudo podman run --rm --detach --privileged \
+sudo podman run --detach --privileged \
     -v $(pwd)/shared:/repo \
     --name $CONTAINER_NAME \
     $CONTAINER
